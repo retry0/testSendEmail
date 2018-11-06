@@ -1,10 +1,11 @@
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-  service: 'mailgun',
+  host: "smtp.mailtrap.io",
+  port: 2525,
   auth: {
-    user: 'postmaster@sandbox4dd0c099139c400299fa8498181d1da2.mailgun.org',
-    pass: '58a4197f561ac7b30b60a54d35f61bd3-4412457b-5c27347a'
+    user: "20fe8b353e0300",
+    pass: "55a38bceaad734"
   }
 });
 
